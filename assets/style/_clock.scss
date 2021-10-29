@@ -1,0 +1,48 @@
+@use '_variables' as *;
+
+.skill {
+    margin-top: 40px;
+    width: 160px;
+    height: 160px;
+    position: relative;
+
+    .outer {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        box-shadow: $outerBoxShadow;
+        padding: 20px;
+
+        .inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            box-shadow: $innerBoxShadow;
+
+            .clock {
+                font-size: 25px;
+                font-weight: 600;
+                color: $white;
+            }
+        }
+    }
+
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        circle {
+            fill: none;
+            stroke: url(#GradientColor);
+            stroke-width: 20px;
+            stroke-dasharray: 439;
+            stroke-dashoffset: 0;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+            transition: 0.5s;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+$primaryFont: 'Montserrat', sans-serif;
+
+$pomodoro: linear-gradient(
+    to bottom,
+    #131313,
+    #352533,
+    #663442,
+    #92493d,
+    #a86d2a
+);
+
+$white: #ffffff;
+
+:export {
+    pomodoro: $pomodoro;
+}
+
+$outerBoxShadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+
+$innerBoxShadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+
+$mainBtnBoxShadow: 5px 5px 12px #212121, -5px -5px 12px #5d5d5d;
+
+$mainBtnBackground: #3f3f3f;
