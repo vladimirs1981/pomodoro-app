@@ -1,0 +1,158 @@
+:export {
+  pomodoro: linear-gradient(to bottom, #131313, #352533, #663442, #92493d, #a86d2a);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #131313, #352533, #663442, #92493d, #a86d2a);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  user-select: none;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main .timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+:export {
+  pomodoro: linear-gradient(to bottom, #131313, #352533, #663442, #92493d, #a86d2a);
+}
+
+.skill {
+  margin-top: 40px;
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+.skill .outer {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  padding: 20px;
+}
+.skill .outer .inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px white, 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+.skill .outer .inner .clock {
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.skill svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.skill svg circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 439;
+  stroke-dashoffset: 0;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  transition: 0.5s;
+}
+
+:export {
+  pomodoro: linear-gradient(to bottom, #131313, #352533, #663442, #92493d, #a86d2a);
+}
+
+.mode-button {
+  font-size: 16px;
+  height: 28px;
+  cursor: pointer;
+  box-shadow: none;
+  border: 1px solid transparent;
+  background: none;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 2px 12px;
+  margin: 0;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.active {
+  border-color: #ffffff;
+}
+
+:export {
+  pomodoro: linear-gradient(to bottom, #131313, #352533, #663442, #92493d, #a86d2a);
+}
+
+.main-button {
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 5px 5px 12px #212121, -5px -5px 12px #5d5d5d;
+  cursor: pointer;
+  margin-top: 40px;
+  height: 40px;
+  text-transform: uppercase;
+  width: 130px;
+  border-radius: 8px;
+  border-width: initial;
+  border-style: none;
+  padding: 0px 12px;
+  transition: color 0.5s ease-in-out 0s;
+  font-size: 15px;
+  font-weight: 600;
+  background: #3f3f3f;
+  color: #ffffff;
+}
+.main-button:focus {
+  outline: none;
+}
+.main-button:active {
+  outline: none;
+}
+
+.activate {
+  transform: translateY(6px);
+  box-shadow: none;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

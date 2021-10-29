@@ -1,0 +1,47 @@
+@use '_variables' as *;
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    &::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    &::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
+
+body {
+    background-image: $pomodoro;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $primaryFont;
+    user-select: none;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .timer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

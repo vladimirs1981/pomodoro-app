@@ -1,0 +1,20 @@
+@use '_variables' as *;
+
+.mode-button {
+    font-size: 16px;
+    height: 28px;
+    cursor: pointer;
+    box-shadow: none;
+    border: 1px solid transparent;
+    background: none;
+    color: $white;
+    border-radius: 8px;
+    padding: 2px 12px;
+    margin: 0;
+    font-weight: 400;
+    font-family: $primaryFont;
+}
+
+.active {
+    border-color: $white;
+}
